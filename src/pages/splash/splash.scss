@@ -1,0 +1,11 @@
+page-splash {
+  ion-content {
+    background-color: #4f69ff !important;
+    /*opacity: 0.5;*/
+  }
+
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
