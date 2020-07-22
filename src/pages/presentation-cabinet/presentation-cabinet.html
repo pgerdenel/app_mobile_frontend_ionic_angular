@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Présentation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngFor="let label_data of dataprez.getAll_labelsDataObj(); let i = index">
+    <div *ngIf=" i > 1">
+      <img src="{{dataprez.urlimg}}" class="img_prez" >
+    </div>
+    <p class="title_point">{{label_data.getLabel()}}</p>
+    <p class="data_point">{{label_data.getData()}}</p>
+  </div>
+
+</ion-content>

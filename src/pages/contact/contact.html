@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Contacter nous</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-content class="home">
+
+    <form [formGroup]="contact_form" (ngSubmit)="envoyer()" novalidate>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" formControlName="email" required></ion-input>
+        </ion-item>
+        <ion-item *ngIf="!contact_form.controls.email.valid  && (contact_form.controls.email.dirty)">
+          <p class="erreur_form">Email non valide</p>
+        </ion-item>
+
+        <ion-item padding>
+          <ion-label>Sujet</ion-label>
+          <ion-select type="sujet" formControlName="sujet" required>
+            <ion-option [value]="dexp">demande d'expertise</ion-option>
+            <ion-option [value]="dp">demande de projet</ion-option>
+            <ion-option [value]="des">collaboration/stage</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item *ngIf="!contact_form.controls.sujet.valid  && (contact_form.controls.sujet.required)">
+          <p class="erreur_form">Sujet non valide</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Message</ion-label>
+          <ion-textarea rows="14" cols="30" type="text" formControlName="message" required></ion-textarea>
+        </ion-item>
+        <ion-item *ngIf="!contact_form.controls.message.valid  && (contact_form.controls.message.dirty)">
+          <p class="erreur_form">Message non valide</p>
+        </ion-item>
+
+      </ion-list>
+      <div padding>
+        <button ion-button default type="submit" [disabled]="!contact_form.valid">Envoyer</button>
+        <ion-spinner name="bubbles" *ngIf="inSigning"></ion-spinner>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-content>

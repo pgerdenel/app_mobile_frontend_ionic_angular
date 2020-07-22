@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nos services</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngFor="let label_data of data_svc.getAll_labelsDataObj(); let i = index">
+    <p class="title_point">{{label_data.getLabel()}}</p>
+    <p class="data_point">{{label_data.getData()}}</p>
+  </div>
+
+  <!--<p class="title_point">Expertise</p>
+  <p>Définir et hiérarchiser les orientations adaptées</p>
+
+  <p class="title_point">Étude historique</p>
+  <p>Dresser la bibliographie archivistique d'un bâtiment afin de produire un documentaire sur l'archéologie du bâti</p>
+
+  <p class="title_point">Matrise d'oeuvre</p>
+  <p>Diriger et coordonner l'exécution des travaux</p>
+
+  <p class="title_point">Asisstance maitrise d'ouvrage</p>
+  <p>Constituer les dossiers techniques de demande de subvention.</p>
+  <p>Adminsitrer les appels d'offre sur les marchées publiques</p>
+
+  <p class="title_point">Coordination de sécurité</p>
+  <p>Assurer la sécurité des travaux, obligatoire lorsqu'il y a plus d'une entreprise intervenante</p>
+
+  <p class="title_point">Partenariats culturels</p>
+  <p>Communications et visites de chantiers</p>
+
+  <p class="title_point">Consultation (facultatif)</p>
+  <p>Répondre à des questions lors d'un rendez-vous particulier</p>
+
+  <p class="title_point">Pourquoi nous faire confiance ?</p>
+  <p>Du fait de notre expérience quasi légendaire</p>
+  <p>Vous pourrez également consulter <a href="#" (click)="pushPartenaire()">l'ensemble des têtes qui nous font confiance</a></p>-->
+
+  <br/>
+
+</ion-content>

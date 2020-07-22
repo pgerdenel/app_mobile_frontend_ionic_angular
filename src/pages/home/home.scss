@@ -1,0 +1,44 @@
+page-home {
+
+  /** CONTENT 1 ***/
+  .content_main_1 {
+    /*border:solid green 3px;*/
+    position: relative;
+    height:60%;
+    width:100%;
+
+    /*background-size: 100% 100%;*/
+    /*background-size: cover;
+    background:no-repeat center;*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+  }
+
+  /* Main container */
+  .overlay-image {
+    position: relative;
+    width: 100%;
+  }
+  /* Original text overlay */
+  .overlay-image .text {
+    /*border:solid green 2px;*/
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #2c223d;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 70%;
+    margin-left: 50%;
+  }
+
+  /** CONTENT 2 ***/
+  .content_main_2 {
+    /*border: solid black 1px;*/
+    height:40%;
+    width:100%;
+  }
+
+}

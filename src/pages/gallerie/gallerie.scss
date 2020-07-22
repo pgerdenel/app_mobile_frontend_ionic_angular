@@ -1,0 +1,47 @@
+page-gallerie {
+
+  ion-content {
+    --overflow: scroll;
+  }
+
+  .g_box {
+
+    width: 100%;
+    height: 100%;
+  }
+
+  ion-grid {
+    width: 100%;
+    height: 100%;
+  }
+
+  ion-row {
+    border:solid green 2px;
+    height:100%;
+    width: 100%;
+  }
+
+  ion-col {
+    border:solid blue 2px;
+    height:100%;
+  }
+
+  .g_img {
+    border:solid black 2px;
+    height:100%;
+    background: transparent url("../../assets/imgs/cabinet.jpg") no-repeat center center;
+    background-size: 90% 90%;
+  }
+  .label_img p {
+    height: 10%;
+    border:solid red 2px;
+    margin-top: -1em;
+  }
+
+  ion-slide.swiper-slide {
+  }
+
+  .thumb-img {
+    padding:10px;
+  }
+}

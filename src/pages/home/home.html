@@ -1,0 +1,20 @@
+<ion-content>
+
+  <div id="i_content_main_1" class="content_main_1" [ngStyle]="{background: 'url('+data_home.getUrl_img()+')'}">
+  <!--<div id="i_content_main_1" [ngStyle]="{background: 'url('+data_home.getUrl_img()+') no-repeat center'}" class="content_main_1" >-->
+    <div class="overlay-image">
+      <div class="text">
+        <span class="phrase1">{{this.data_home.getPhrase_1()}}</span>
+        <br/>
+        <span class="phrase2">{{this.data_home.getPhrase_2()}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="i_content_main_2" class="content_main_2">
+
+    <main-choice-box></main-choice-box>
+
+  </div>
+
+</ion-content>

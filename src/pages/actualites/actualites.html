@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Actualités</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let actu of tab_actu">
+    <!-- <img src="../../assets/imgs/articles/a1.jpg"/>url img -->
+    <h3>{{ actu.type }}</h3>
+    <ion-slides class="image-slider" loop="true" slidesPerView="1">
+      <ion-slide>
+        <img src="{{actu.img}}" class="thumb-img" imageViewer>
+      </ion-slide>
+    </ion-slides>
+    <ion-card-content>
+
+    <ion-card-title class="head_act">{{actu.nom_edifice}}</ion-card-title>
+    <p class="head_art">{{actu.head}}</p>
+    <hr/>
+    <p class="content_art">{{actu.content}}</p>
+    <hr/>
+    <p class="infos coord">{{actu.cp}} - {{actu.ville}}</p>
+    <p class="infos num">{{actu.mm}} - {{actu.duree}}</p>
+  </ion-card-content>
+  </ion-card>
+
+</ion-content>

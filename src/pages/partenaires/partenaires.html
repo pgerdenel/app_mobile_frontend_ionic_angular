@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nos partenaires </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p class="title_head">Nous ont accordé leur confiance : </p>
+  <p class="title_point">Les collectivitées publiques suivantes :</p>
+  <ion-list *ngFor="let col of col_tab">
+    <ion-item>
+      <ion-label>{{col['nom']}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <p class="title_point">Les particuliers suivants :</p>
+  <ion-list *ngFor="let part of part_tab">
+    <ion-item>
+      <ion-label>{{part['nom']}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

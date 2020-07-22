@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>gallerie</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides class="image-slider" loop="true" effect="flip" slidesPerView="1">
+    <ion-slide *ngFor="let img of array_image">
+      <!--<img src="assets/imgs/{{img}}" class="thumb-img" imageViewer>-->
+      <img src="{{host_url_referer}}{{img}}" class="thumb-img" imageViewer>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
