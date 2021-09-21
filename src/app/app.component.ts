@@ -6,8 +6,6 @@ import { HomePage } from '../pages/home/home';
 import {SplashPage} from "../pages/splash/splash";
 import { NavigationBar } from '@ionic-native/navigation-bar/ngx';
 import {AndroidFullScreen} from "@ionic-native/android-full-screen/ngx";
-/*import {Plugins} from "@capacitor/core";*/
-/*const { SplashScreenc } = Plugins;*/
 
 @Component({
   templateUrl: 'app.html'
@@ -36,23 +34,6 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-
-      // Hide the splash (you should do this on app launch)
-      /*SplashScreenc.hide();*/
-
-      // cache la navigation bar  android
-      /*let autoHide: boolean = true;
-      this.navigationBar.setUp(autoHide);
-      this.navigationBar.hideNavigationBar().then((result) => {
-        console.log("success hide navigation bar");
-      })
-      .catch((err) => {
-        console.error("error hide navigation bar= "+err);
-      });
-
-     this.androidFullScreen.isImmersiveModeSupported()
-        .then(() => console.log('Immersive mode supported'))
-        .catch(err => console.log(err));*/
 
       // cache la statut bar android
       this.statusBar.hide();
