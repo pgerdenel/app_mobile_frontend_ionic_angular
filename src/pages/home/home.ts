@@ -20,7 +20,6 @@ export class HomePage implements OnInit, OnDestroy  {
   ngOnInit(): void {
    this.data_home_Subscription =  this.homeProvider.getDataHome()
      .subscribe(result => {
-     //this.data_home = new HomeData(result[1]['phrase'], result[0]['url']);
      this.data_home.setUrls_img(result[0]['url']);
      this.data_home.setPhrases(result[1]['phrase']);
    }, error => console.error("erreur in subscribe= "+error));
