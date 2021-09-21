@@ -40,9 +40,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         NgModule({
             declarations: [
-                MyApp
-                /* A COMMENTER JUSQU'A LA FIN POUR PASSER EN PROD*/
-                ,
+                MyApp,
                 PresentationCabinetPage,
                 ActualitesPage,
                 PresentationServicePage,
@@ -56,16 +54,13 @@ var AppModule = /** @class */ (function () {
                 IonicModule.forRoot(MyApp),
                 HttpClientModule,
                 IonicImageViewerModule,
-                LottieAnimationViewModule.forRoot()
-                /*A COMMENTER JUSQU'A LA FIN POUR PASSER EN PROD */
-                ,
+                LottieAnimationViewModule.forRoot(),
                 HomePageModule,
             ],
             bootstrap: [IonicApp],
             entryComponents: [
                 MyApp,
                 HomePage,
-                /*A COMMENTER JUSQU'A LA FIN POUR PASSER EN LAB <== NON */
                 PresentationCabinetPage,
                 ActualitesPage,
                 PresentationServicePage,
