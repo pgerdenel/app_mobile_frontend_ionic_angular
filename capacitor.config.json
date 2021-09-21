@@ -1,6 +1,6 @@
 {
-  "appId": "com.business.th",
-  "appName": "TL Architecture",
+  "appId": "com.business.x",
+  "appName": "xxx",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
