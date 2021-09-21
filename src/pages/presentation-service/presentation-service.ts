@@ -27,9 +27,6 @@ export class PresentationServicePage implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.data_svc_Subscription = this.svcProvider.getDataSvc()
       .subscribe(result => {
-        /*console.log("result = "+JSON.stringify(result));
-        console.log("keys= "+Object.keys(result));
-        console.log("result = "+JSON.stringify(result[0]));*/
         this.data_svc.setLabels_and_data(result[0]);
       }, error => console.error("erreur in subscribe= "+error));
   }
