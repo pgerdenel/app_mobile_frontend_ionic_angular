@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.business.th" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TLArchitecture</name>
-    <description>Cabinet d'architecture Thibaut Legendre.</description>
-    <author email="th@free.fr" href="http://architecture-legendre.com/">Archictecture Legendre site officiel</author>
+    <description>xxxxxxx.</description>
+    <author email="x@x.fr" href="http://xxxxxxxxxx.com/">xxxxxxxxxxxxx site officiel</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
