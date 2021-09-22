@@ -1,6 +1,4 @@
-(public version)
-# application_mobile_frontend_ionic_angular
-Frontend Ionic 6 &amp; Angular 9 pour une application mobile multiplateforme
+🔲 Frontend : application web, mobile (Android, IOS)
 
 - Typescript
 - Asynchrone
@@ -8,3 +6,5 @@ Frontend Ionic 6 &amp; Angular 9 pour une application mobile multiplateforme
 - Providers
 - Components
 - Custom Validators
+
+(public version)
